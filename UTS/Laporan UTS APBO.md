@@ -80,12 +80,14 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 
 
 ### 4. Relasi / ERD
-![erdkosan](https://github.com/user-attachments/assets/c6f0d414-f274-4567-8a0f-4637bc3a9639)
+![image](https://github.com/user-attachments/assets/808ed6ca-4d62-49a1-a726-7cbfa7a1b6a9)
+
 
 
 
 ### 5. Class Diagram
-![image](https://github.com/user-attachments/assets/5e70b5fb-7c04-4a02-abee-7f5485da76c8)
+![class diagram](https://github.com/user-attachments/assets/23a8e123-3ae1-480f-8bcc-46740c5f6ffb)
+
 
 
 ### 6. Wireframe/Mockup
