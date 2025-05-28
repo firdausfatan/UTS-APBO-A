@@ -5,6 +5,7 @@ Repositori ini berisi hasil Ujian Tengah Semester (UTS) mata kuliah Analisis Pem
 Adi Wahyu Pribadi, S.Si., M.Kom
 
 ## Anggota Kelompok 
+
 | No | Nama Anggota             | NPM         |
 |----|-----------------------   |-------------|
 | 1  | Firdaus Fatan Nugraha    | 4523210049  |
@@ -31,14 +32,27 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 #### A. Tabel Master
 ##### 1. Penyewa
 
-| Nama Atribut  | Tipe Data    | Keterangan                 |
-|---------------|--------------|----------------------------|
+| Nama Atribut      | Tipe Data | Keterangan                                              |
+|-------------------|-----------|---------------------------------------------------------|
+| id_penyewa        | Int (PK)  | ID unik penyewa (auto increment)                        |
+| nama_penyewa      | String    | Nama lengkap penyewa                                    |
+| email_penyewa     | String    | Email penyewa                                           |
+| no_telp_penyewa   | String    | Nomor telepon penyewa                                   |
+| password_penyewa  | String    | Password penyewa                                        |
+| status_akun       | Enum      | Status akun: Menunggu Verifikasi / Terverifikasi / Umum |
 
 
 ##### 2. Admin
 
-| Nama Atribut   | Tipe Data    | Keterangan                  |
-|----------------|--------------|-----------------------------|
+| Nama Atribut   | Tipe Data  | Keterangan                     |
+|----------------|------------|--------------------------------|
+| id_admin       | Int (PK)   | ID unik admin (auto increment) |
+| nama_admin     | String     | Nama lengkap admin             |
+| email_admin    | String     | Email admin                    |
+| no_telp_admin  | String     | Nomor telepon admin            |
+| password_admin | String     | Password admin                 |
+
+
 
 
 ##### 3. Kamar
@@ -65,11 +79,14 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 |--------------|--------------|----------------------------------------------|
 
 
-### 4. Relasi
-![Screenshot 2025-05-29 000921](https://github.com/user-attachments/assets/b8f0da03-7a46-4226-a396-ca8e0d8799c4)
+### 4. Relasi / ERD
+![erdkosan](https://github.com/user-attachments/assets/c6f0d414-f274-4567-8a0f-4637bc3a9639)
+
+
 
 ### 5. Class Diagram
-![class diagram](https://github.com/user-attachments/assets/423a3be5-7a8e-40cc-904a-08cbdd1cd391)
+![image](https://github.com/user-attachments/assets/5e70b5fb-7c04-4a02-abee-7f5485da76c8)
+
 
 ### 6. Wireframe/Mockup
 #### A. Daftar Akun - Pembeli
