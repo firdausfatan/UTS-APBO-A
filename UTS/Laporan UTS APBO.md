@@ -27,67 +27,43 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 ### 2. Use Case Diagram
 ![UC Diagram vr 2](https://github.com/user-attachments/assets/7cd2478a-e810-4e07-9877-859c742b45ef)
 
-### 3. Entitas Utama
-#### A. Penyewa
+### 3. Tabel Database
+#### A. Tabel Master
+##### 1. Penyewa
 
 | Nama Atribut  | Tipe Data    | Keterangan                 |
 |---------------|--------------|----------------------------|
-| id_pembeli    | String (PK)  | ID unik milik pembeli      |
-| nama_pembeli  | String       | Nama lengkap pembeli       |
-| alamat        | String       | Alamat lengkap pembeli     |
-| notelp        | String       | Nomor telepon pembeli      |
 
-#### B. Admin
+
+##### 2. Admin
 
 | Nama Atribut   | Tipe Data    | Keterangan                  |
 |----------------|--------------|-----------------------------|
-| id_makanan     | String (PK)  | ID unik makanan             |
-| nama_makanan   | String       | Nama makanan                |
-| stok           | Int          | Stok tersedia               |
-| harga          | Double       | Harga makanan               |
-| foto           | String       | File foto makanan           |
-| deskripsi      | String       | Deskripsi makanan           |
 
-#### C. Kamar
+
+##### 3. Kamar
 
 | Nama Atribut  | Tipe Data    | Keterangan                          |
 |---------------|--------------|-------------------------------------|
-| id_pesanan    | String (PK)  | ID unik pesanan                     |
-| id_pembeli    | String (FK)  | Relasi ke tabel Pembeli            |
-| id_makanan    | String (FK)  | Relasi ke tabel Makanan            |
-| jumlah        | Int          | Jumlah makanan yang dipesan        |
-| subtotal      | Double       | Harga dikali jumlah                |
-| waktu_pesan   | Datetime     | Waktu pemesanan                    |
 
-#### D. Pembayaran
+#### B. Tabel Transaksi
+##### 1. Pembayaran
 
 | Nama Atribut      | Tipe Data    | Keterangan                                         |
 |-------------------|--------------|----------------------------------------------------|
-| id_pembayaran     | String (PK)  | ID unik pembayaran                                 |
-| id_pesanan        | String (FK)  | Relasi ke tabel Pesanan                            |
-| subtotal          | Double       | Total harga yang dibayarkan                        |
-| metode            | String       | Metode pembayaran (ENUM: COD, Transfer)        |
-| waktu_pembayaran  | Datetime     | Waktu pembayaran dilakukan                         |
 
-#### E. Sewa
+
+##### 2. Sewa
 
 | Nama Atribut | Tipe Data    | Keterangan                                   |
 |--------------|--------------|----------------------------------------------|
-| id_notif     | String (PK)  | ID unik notifikasi                           |
-| id_pesanan   | String (FK)  | Relasi ke tabel Pesanan                      |
-| konfirmasi   | Boolean      | Status konfirmasi pembayaran                 |
-| status       | String       | Status pesanan (pending, selesai)        |
-| notif        | String       | Pesan notifikasi                             |
 
-#### F. Feedback
+
+##### 3. Feedback
 
 | Nama Atribut | Tipe Data    | Keterangan                                   |
 |--------------|--------------|----------------------------------------------|
-| id_notif     | String (PK)  | ID unik notifikasi                           |
-| id_pesanan   | String (FK)  | Relasi ke tabel Pesanan                      |
-| konfirmasi   | Boolean      | Status konfirmasi pembayaran                 |
-| status       | String       | Status pesanan (pending, selesai)        |
-| notif        | String       | Pesan notifikasi                             |
+
 
 ### 4. Relasi
 ![Screenshot 2025-05-29 000921](https://github.com/user-attachments/assets/b8f0da03-7a46-4226-a396-ca8e0d8799c4)
