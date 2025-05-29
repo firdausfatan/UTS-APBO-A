@@ -59,10 +59,10 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 
 | Nama Atribut    | Tipe Data | Keterangan                                      |
 | --------------- | --------- | ----------------------------------------------- |
-| no_kamar       | Int (PK)  | Nomor kamar (auto increment)                     |
-| foto_kos       | String    | File foto kos/kamar                              |
-| tipe_kamar     | Enum      | Tipe kamar: A / B / C                            |
-| harga_perbulan | Decimal   | Harga sewa per bulan                             |
+| no_kamar        | Int (PK)  | Nomor kamar (auto increment)                    |
+| foto_kos        | String    | File foto kos/kamar                             |
+| tipe_kamar      | Enum      | Tipe kamar: A / B / C                           |
+| harga_perbulan  | Decimal   | Harga sewa per bulan                            |
 | status          | Enum      | Status kamar: Kosong / Isi                      |
 | deskripsi       | Text      | Deskripsi tambahan kamar                        |
 | fasilitas       | String    | Daftar fasilitas kamar (dipisahkan dengan koma) |
@@ -88,12 +88,12 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 
 | Nama Atribut     | Tipe Data | Keterangan                    |
 | ---------------- | --------- | ----------------------------- |
-| id_sewa         | Int (PK)  | ID unik sewa (auto increment)  |
-| id_penyewa      | Int (FK)  | ID penyewa yang menyewa        |
-| no_kamar        | Int (FK)  | Nomor kamar yang disewa        |
-| tanggal_mulai   | DateTime  | Tanggal mulai sewa             |
-| tanggal_selesai | DateTime  | Tanggal selesai sewa           |
-| status_sewa     | Enum      | Status sewa: Sewa / Selesai    |
+| id_sewa          | Int (PK)  | ID unik sewa (auto increment) |
+| id_penyewa       | Int (FK)  | ID penyewa yang menyewa       |
+| no_kamar         | Int (FK)  | Nomor kamar yang disewa       |
+| tanggal_mulai    | DateTime  | Tanggal mulai sewa            |
+| tanggal_selesai  | DateTime  | Tanggal selesai sewa          |
+| status_sewa      | Enum      | Status sewa: Sewa / Selesai   |
 
 
 
