@@ -151,7 +151,21 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 
 
 
-#### F. Konfirmasi - Penjual
+#### F. Melihat Data Status Sewa - Admin
+![image](https://github.com/user-attachments/assets/0232bc4c-bff7-43cf-83e1-5c70b538bf1f)
 
 
-#### G. Notifikasi - Pembeli
+#### G. Mengelola Keluhan Penyewa - Admin
+![image](https://github.com/user-attachments/assets/b5c46297-d39f-4e9b-a26d-e9640d46026c)
+
+
+#### H. Tampilan Form Pembayaran - Penyewa
+![image](https://github.com/user-attachments/assets/ef566f76-5e62-4ba5-a6ff-20f80aafd448)
+![image](https://github.com/user-attachments/assets/390ac96a-ef98-431b-ad8f-0414a9334661)
+
+
+#### I. Tampilan Mengajukan Keluhan - Penyewa
+![image](https://github.com/user-attachments/assets/c709d748-20d9-4d41-9c21-65d1aae9c2cd)
+
+
+
