@@ -57,26 +57,56 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 
 ##### 3. Kamar
 
-| Nama Atribut  | Tipe Data    | Keterangan                          |
-|---------------|--------------|-------------------------------------|
+| Nama Atribut    | Tipe Data | Keterangan                                      |
+| --------------- | --------- | ----------------------------------------------- |
+| no_kamar       | Int (PK)  | Nomor kamar (auto increment)                     |
+| foto_kos       | String    | File foto kos/kamar                              |
+| tipe_kamar     | Enum      | Tipe kamar: A / B / C                            |
+| harga_perbulan | Decimal   | Harga sewa per bulan                             |
+| status          | Enum      | Status kamar: Kosong / Isi                      |
+| deskripsi       | Text      | Deskripsi tambahan kamar                        |
+| fasilitas       | String    | Daftar fasilitas kamar (dipisahkan dengan koma) |
+
 
 #### B. Tabel Transaksi
 ##### 1. Pembayaran
 
-| Nama Atribut      | Tipe Data    | Keterangan                                         |
-|-------------------|--------------|----------------------------------------------------|
+| Nama Atribut       | Tipe Data | Keterangan                               |
+| -------------------| --------- | ---------------------------------------  |
+| id_pembayaran      | Int (PK)  | ID unik pembayaran (auto increment)      |
+| id_sewa            | Int (FK)  | ID sewa yang dibayarkan                  |
+| tanggal_pembayaran | DateTime  | Tanggal pembayaran dilakukan             |
+| jumlah_bayar       | Decimal   | Jumlah uang yang dibayarkan              |
+| metode_pembayaran  | Enum      | Metode: E-Wallet / Transfer Bank / Cash  | 
+| bukti_pembayaran   | String    | Nama file bukti pembayaran               |
+| status_pembayaran  | Enum      | Status: Lunas / Cicil                    |
+| tenggat_pembayaran | DateTime  | Tenggat waktu pembayaran (jika ada)      |
+
 
 
 ##### 2. Sewa
 
-| Nama Atribut | Tipe Data    | Keterangan                                   |
-|--------------|--------------|----------------------------------------------|
+| Nama Atribut     | Tipe Data | Keterangan                    |
+| ---------------- | --------- | ----------------------------- |
+| id_sewa         | Int (PK)  | ID unik sewa (auto increment)  |
+| id_penyewa      | Int (FK)  | ID penyewa yang menyewa        |
+| no_kamar        | Int (FK)  | Nomor kamar yang disewa        |
+| tanggal_mulai   | DateTime  | Tanggal mulai sewa             |
+| tanggal_selesai | DateTime  | Tanggal selesai sewa           |
+| status_sewa     | Enum      | Status sewa: Sewa / Selesai    |
+
 
 
 ##### 3. Feedback
 
-| Nama Atribut | Tipe Data    | Keterangan                                   |
-|--------------|--------------|----------------------------------------------|
+| Nama Atribut      | Tipe Data | Keterangan                                                                |
+| ----------------- | --------- | ------------------------------------------------------------------------- |
+| id_feedback       | Int (PK)  | ID unik feedback (auto increment)                                         |
+| no_kamar          | Int (FK)  | Nomor kamar yang diberi feedback                                          |
+| tanggal_feedback  | DateTime  | Tanggal saat feedback diberikan                                           |
+| isi_feedback      | String    | Isi atau pesan feedback                                                   |
+| status_feedback   | Enum      | Status: Belum Dibaca / Sudah Dibaca / Sedang Diproses / Selesai Ditangani |
+
 
 
 ### 4. Relasi / ERD
