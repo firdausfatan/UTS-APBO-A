@@ -121,19 +121,34 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 
 
 ### 6. Wireframe/Mockup
-#### A. Daftar Akun - Pembeli
+#### A. Daftar Akun - Penyewa
+![image](https://github.com/user-attachments/assets/b36df7eb-ed07-4a73-81d8-5a46cef04364)
 
 
-#### B. Mengelola Data Makanan - Penjual
 
 
-#### C. Makanan  - Penjual, Pembeli
+#### B. Login - Penyewa/Admin
+![image](https://github.com/user-attachments/assets/ac18c328-471e-4ba2-abe4-ff0bc61ae367)
 
 
-#### D. Pesan Makanan - Pembeli
 
 
-#### E. Pembayaran - Pembeli
+#### C. Mengelola Daftar Kos - Admin
+![image](https://github.com/user-attachments/assets/ec864e32-fae2-4c9a-baa5-2d7c6396c3eb)
+![image](https://github.com/user-attachments/assets/ed56e6b9-8d3e-463f-8992-b4aeb13d89e4)
+![image](https://github.com/user-attachments/assets/51cf925a-6636-4044-89f8-215abe9e703c)
+
+
+
+
+#### D. Melihat Data Penyewa - Admin
+![image](https://github.com/user-attachments/assets/6eee8e71-4e10-4f33-826b-487ab0373dce)
+
+
+
+#### E. Melihat Histori Pembayaran - Admin
+![image](https://github.com/user-attachments/assets/3e0a40e4-3082-4cab-b8eb-83abaf11745e)
+
 
 
 #### F. Konfirmasi - Penjual
