@@ -167,5 +167,15 @@ Berperan sebagai pemegang sistem dalam sistem informasi kos-kosan.
 #### I. Tampilan Mengajukan Keluhan - Penyewa
 ![image](https://github.com/user-attachments/assets/c709d748-20d9-4d41-9c21-65d1aae9c2cd)
 
+### 7. Sequence Diagram
+#### A. Register/Login 
+![Sequence regis   login_page-0001](https://github.com/user-attachments/assets/d942ca6a-31f1-4db4-b8c4-edcc8a6f8f42)
 
+#### B. Pendaftaran Sewa
+![pendaftaran sequence (1)_page-0001](https://github.com/user-attachments/assets/5387e9fb-87a8-40b7-8713-480105b64324)
 
+#### C. Perpanjangan Sewa
+![sequence perpanjangan sewa_page-0001](https://github.com/user-attachments/assets/77d5a3e0-5f0b-4b2f-bb6b-81d68f15efd9)
+
+#### D. Pengajuan Feedback
+![sequence feedback_page-0001](https://github.com/user-attachments/assets/4c847fac-d766-4bbd-9655-1766566ca354)
